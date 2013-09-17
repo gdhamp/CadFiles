@@ -5,7 +5,7 @@ root2 = sqrt(2.0);
 
 module FivePieceTangram()
 {
-	linear_extrude(height = gheight, center = true, convexity = 10, twist = 0)
+	linear_extrude(height = gheight, center = false, convexity = 10, twist = 0)
 	{
 		translate([-2,-2,0])
 		{
@@ -25,7 +25,7 @@ module FivePieceTangram()
 						[1+dx, 1+dy] ]);
 
 			// Small Triangle
-			assign(dx = 2 * space, dy = 1 * space)
+			assign(dx = 3 * space, dy = 1 * space)
 				polygon([	[3+dx, 0+dy],
 						[3+dx, 2+dy],
 						[2+dx, 1+dy] ]);
